@@ -1,10 +1,10 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using System.Collections.Generic;
 
 
 namespace BeastHunter
 {
-    public class PhysicsService : Service
+    public sealed class PhysicsService : Service
     {
         #region Fields
 
