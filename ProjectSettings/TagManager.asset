@@ -18,7 +18,13 @@ TagManager:
   - UI Canvas
   - TestTag
   - Manager
+  - Rabbit
+  - DialogueNpcGUI
+  - DialogueSystemView
   - Sphere
+  - Weapon
+  - CameraFreelook
+  - Hitbox
   layers:
   - Default
   - TransparentFX
@@ -31,9 +37,9 @@ TagManager:
   - Player
   - Ground
   - Minimap
-  - 
-  - 
-  - 
+  - Npc
+  - PlayerWeapon
+  - PuppetMaster
   - 
   - 
   - 

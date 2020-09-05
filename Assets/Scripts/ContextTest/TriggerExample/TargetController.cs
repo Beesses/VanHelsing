@@ -14,7 +14,7 @@ namespace BeastHunter
 
         #region ClassLifeCycles
 
-        public TargetController(GameContext context, Services services)
+        public TargetController(GameContext context)
         {
             _context = context;
         }
@@ -26,7 +26,7 @@ namespace BeastHunter
 
         public void OnAwake()
         {
-            var sphers = _context.GetTriggers(InteractableObjectType.Cube);
+            var sphers = _context.GetTriggers(InteractableObjectType.Sphere);
             foreach (var trigger in sphers)
             {
                 var targetBehaviour = trigger as TargetBehaviour;
@@ -63,15 +63,15 @@ namespace BeastHunter
             return tagObject.CompareTag(TagManager.SPHERE);
         }
 
-        private void OnTriggerEnterHandler(ITrigger enteredObject)
+        private void OnTriggerEnterHandler(ITrigger enteredObject, Collider other)
         {
             enteredObject.IsInteractable = true;
             Debug.Log("Enter");
         }
 
-        private void OnTriggerExitHandler(ITrigger enteredObject)
+        private void OnTriggerExitHandler(ITrigger exitedObject, Collider other)
         {
-            enteredObject.IsInteractable = false;
+            exitedObject.IsInteractable = false;
             Debug.Log("Exit");
         }
 
