@@ -18,10 +18,10 @@ MonoBehaviour:
     SlotSize: 3
     ItemType: 2
     MeshOfObject: {fileID: 0}
-  WeaponHandType: 1
-  WeaponType: 0
-  WeaponPrefab: {fileID: 2541537832628782672, guid: 21784e92168284f4c9d810067f4d9446,
-    type: 3}
+  WeaponHandType: 2
+  WeaponType: 1
+  WeaponPrefab: {fileID: 181008, guid: 2b70d927e5d7dc647a2926b9d6aea717, type: 3}
+  WeaponObject: {fileID: 0}
   PrefabPositionInHand: {x: 7.5, y: 5, z: 1.25}
   PrefabRotationInHand: {x: -115, y: 0, z: 0}
   Weight: 5
@@ -30,33 +30,33 @@ MonoBehaviour:
   TimeToRemove: 1
   TimeToDisappear: 0.5
   CurrentAttack:
-    Time: 1.2
+    Time: 0.8
     AttackDamage:
       PhysicalDamage: 2
       StunProbability: 0
   AttacksLeft:
-  - Time: 1.2
+  - Time: 0.8
     AttackDamage:
       PhysicalDamage: 2
       StunProbability: 0
-  - Time: 1.2
+  - Time: 0.8
     AttackDamage:
       PhysicalDamage: 2
       StunProbability: 0
-  - Time: 1.2
+  - Time: 0.8
     AttackDamage:
       PhysicalDamage: 2
       StunProbability: 0
   AttacksRight:
-  - Time: 1
+  - Time: 0.67
     AttackDamage:
       PhysicalDamage: 2
       StunProbability: 0
-  - Time: 1.2
+  - Time: 0.8
     AttackDamage:
       PhysicalDamage: 2
       StunProbability: 0
-  - Time: 1.3
+  - Time: 0.87
     AttackDamage:
       PhysicalDamage: 2
       StunProbability: 0

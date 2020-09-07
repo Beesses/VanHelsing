@@ -3,7 +3,7 @@
 
 namespace BeastHunter
 {
-    [CreateAssetMenu(fileName = "NewWeapon", menuName = "CreateWeapon/New", order = 0)]
+    [CreateAssetMenu(fileName = "NewWeapon", menuName = "CreateItem/CreateWeapon", order = 0)]
     public sealed class WeaponItem : BaseItem
     {
         #region Fields
@@ -12,6 +12,7 @@ namespace BeastHunter
         public WeaponType WeaponType;
 
         public GameObject WeaponPrefab;
+        public GameObject WeaponObject;
 
         public Vector3 PrefabPositionInHand;
         public Vector3 PrefabRotationInHand;
